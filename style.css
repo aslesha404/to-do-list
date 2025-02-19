@@ -1,0 +1,102 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #FEC8D8;
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(206,45,253,1) 100%); */
+
+}
+.to_do_app{
+   max-width: 540px;
+   width: 100%;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+border-radius: 10px;
+
+    
+}
+.to_do_app img{
+    width: 40px;
+    margin-left: 10px;
+}
+.to_do_app h2{
+    /* font-size: 20px; */
+    color: red;
+    display: flex;
+margin-bottom: 20px;
+align-items: center;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(242, 239, 239);
+    border-radius: 5%;
+    padding-left: 20px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-weight: bold;
+    padding: 10px;
+}
+button{
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    padding-left: 40px;
+    outline: none;
+  cursor: pointer;
+    border-radius: 40px;
+    font-weight: bold;
+    padding-right: 30px;
+
+}
+ul li{
+list-style: none;
+font-size: 17px;
+padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(OIP\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    top: 12%;
+    left: 8px;
+}
+
+ .cheaked::before{
+    background-image: url(cheaked.jpg);
+} 
+
+ .cheaked{
+    text-decoration: line-through;
+    color: #555;
+}
+span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+}
+span:hover{
+    background-color: rgb(233, 216, 219);
+    color: black;
+}
